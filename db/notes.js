@@ -57,7 +57,7 @@ export function getNotes() {
  * @returns {undefined} if no note with the given ID exists
  */
 export function getNoteById(id) {
-  // TODO
+  return notes.find((note) => note.id === id);
 }
 
 /**
@@ -67,5 +67,5 @@ export function getNoteById(id) {
  * @returns {Note} the newly created note
  */
 export function addNote(text) {
-  // TODO
+  return notes.push({ text });
 }
